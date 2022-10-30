@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer one",
+      "price": "43000",
+      "quantity": 600,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 4300,
+      "quantity": 600,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Casque 10",
+      "price": "10",
+      "quantity": "10",
+      "selected": true,
+      "available": false
+    },
+    {
+      "name": "fsdf",
+      "price": "20",
+      "quantity": "1",
+      "selected": false,
+      "available": true,
+      "id": 4
+    }
+  ]
+}
