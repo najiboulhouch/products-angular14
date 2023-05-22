@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ProductsService} from "../../services/products.service";
 import {Product} from "../../models/product.model";
 import {catchError, map, Observable, of, startWith} from "rxjs";
 import {ActionEvent, AppDataState, DataStateEnum, ProductsActionsTypes} from "../../state/product.state";
 import {Router} from "@angular/router";
+import {EventDriverService} from "../../services/event.driver.service";
 
 const deleteThisRecord = "Do you delete this record ? ";
 
@@ -13,13 +14,20 @@ const deleteThisRecord = "Do you delete this record ? ";
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit  {
+
    products$: Observable<AppDataState<Product[]>> | null = null  ;
    readonly dataStateEnum = DataStateEnum;
 
   constructor(private productService : ProductsService ,
+              private eventDrivenService : EventDriverService,
               private router : Router) { }
 
   ngOnInit(): void {
+    this.eventDrivenService.sourceEventSubjectObservable$.subscribe(
+      (actionEvent : ActionEvent) => {
+        this.onActionEvent(actionEvent);
+      }
+    )
   }
 
   onGetAllProducts() {
@@ -109,4 +117,6 @@ export class ProductsComponent implements OnInit  {
           break;
       }
   }
+
+
 }

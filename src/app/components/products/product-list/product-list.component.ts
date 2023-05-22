@@ -11,29 +11,24 @@ import {Product} from "../../../models/product.model";
 export class ProductListComponent implements OnInit {
 
   @Input() productsInput$: Observable<AppDataState<Product[]>> | null = null  ;
-  @Output() productEventEmitter : EventEmitter<ActionEvent> = new EventEmitter<ActionEvent>();
+  //@Output() productEventEmitter : EventEmitter<ActionEvent> = new EventEmitter<ActionEvent>();
   readonly dataStateEnum = DataStateEnum;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+/*
   onSelectProduct(product: Product) {
       this.productEventEmitter.emit({type :ProductsActionsTypes.SELECT_PRODUCT , payLoad : product});
   }
 
   onDeleteProduct(product: Product) {
     this.productEventEmitter.emit({type :ProductsActionsTypes.DELETE_PRODUCT , payLoad : product});
-
   }
 
   onUpdateProduct(product: Product) {
     this.productEventEmitter.emit({type :ProductsActionsTypes.EDIT_PRODUCT , payLoad : product});
 
-  }
-
-  onActionEvent($event: ActionEvent) {
-        this.productEventEmitter.emit($event);
-  }
+  }*/
 }

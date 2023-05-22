@@ -3,7 +3,8 @@
   <td>{{productInput.price}}</td>
   <td>{{productInput.quantity}}</td>
   <td>{{productInput.selected}}</td>
-  <td>{{productInput.available}}</td>
+  <td><span [ngClass]="productInput.available? 'fa fa-check text-success' : ''"></span></td>
+
   <td>
     <button (click)="onSelectProduct(productInput)" [ngClass]="productInput.selected? 'btn-success' : 'btn-danger'"
             class="btn btn-sm">
