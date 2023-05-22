@@ -1,4 +1,11 @@
-# WebCatApp
+# Products Management project.
+
+A quick Angular application that uses CRUD operations to communicate with REST api developped by Spring Boot Framework.
+This application show you how a components communicate together using @Input, @Output decorators.
+
+These modules are used in our app : ReactiveFormsModule, HttpClientModule and AppRoutingModule.
+
+========================================================
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
