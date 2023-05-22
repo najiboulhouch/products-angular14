@@ -18,17 +18,17 @@
     },
     {
       "id": 3,
-      "name": "Casque 10",
-      "price": "10",
-      "quantity": "10",
-      "selected": true,
+      "name": "qqq",
+      "price": "12",
+      "quantity": "3",
+      "selected": false,
       "available": false
     },
     {
-      "name": "fsdf",
-      "price": "20",
-      "quantity": "1",
-      "selected": false,
+      "name": "10",
+      "price": "01",
+      "quantity": 0,
+      "selected": true,
       "available": true,
       "id": 4
     }

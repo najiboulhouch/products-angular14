@@ -8,7 +8,10 @@ import {ActionEvent} from "../state/product.state";
 export class EventDriverService {
 
   sourceEventSubject : Subject<ActionEvent> = new Subject<ActionEvent>();
+
   sourceEventSubjectObservable$ = this.sourceEventSubject.asObservable();
+
+
 
   publishEvent(event:ActionEvent){
     this.sourceEventSubject.next(event);

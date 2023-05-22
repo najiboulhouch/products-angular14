@@ -12,6 +12,8 @@ export enum ProductsActionsTypes{
   DELETE_PRODUCT= "[Product] Delete product",
   SELECT_PRODUCT= "[Product] Select product",
   EDIT_PRODUCT= "[Product] Edit product",
+  PRODUCT_ADDED= "[Product] product added",
+  EDIT_UPDATED= "[Product] product updated",
 
 }
 
