@@ -1,6 +1,6 @@
 # Products Management project
 
-A quick Angular application that uses CRUD operations to communicate with REST api developped by Spring Boot Framework.
+A quick Angular application that uses CRUD operations to communicate with REST API.</br>
 This application show you how a components communicate together using <b>@Input, @Output decorators</b>.
 
 These modules are used in our app : <b>ReactiveFormsModule, HttpClientModule and AppRoutingModule</b>.
