@@ -40,7 +40,8 @@ export class ProductEditComponent implements OnInit {
   onUpdateProduct() {
     this.productService.updateProduct(this.productFormGroup?.value).subscribe(
         data => {
-          this.eventDrivenService.publishEvent({type : ProductsActionsTypes.PRODUCT_ADDED}),
+          console.log(data);
+          this.eventDrivenService.publishEvent({type : ProductsActionsTypes.EDIT_UPDATED}),
             alert("Success Product updated")}
       )
   }

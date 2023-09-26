@@ -16,6 +16,7 @@ const deleteThisRecord = "Do you delete this record ? ";
 export class ProductsComponent implements OnInit  {
 
    products$: Observable<AppDataState<Product[]>> | null = null  ;
+   
    readonly dataStateEnum = DataStateEnum;
 
   constructor(private productService : ProductsService ,
@@ -90,6 +91,7 @@ export class ProductsComponent implements OnInit  {
   }
 
   onActionEvent($event: ActionEvent) {
+    console.log($event);
       switch ($event.type) {
         case ProductsActionsTypes.GET_ALL_PRODUCTS:
           this.onGetAllProducts();

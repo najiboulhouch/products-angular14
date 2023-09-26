@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Computer one",
-      "price": "43000",
-      "quantity": 600,
-      "selected": false,
+      "price": "4300",
+      "quantity": "60",
+      "selected": true,
       "available": true
     },
     {
@@ -13,7 +13,7 @@
       "name": "Printer",
       "price": 4300,
       "quantity": 600,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -21,16 +21,24 @@
       "name": "qqq",
       "price": "12",
       "quantity": "3",
-      "selected": false,
+      "selected": true,
       "available": false
     },
     {
       "name": "10",
       "price": "01",
       "quantity": 0,
-      "selected": true,
+      "selected": false,
       "available": true,
       "id": 4
+    },
+    {
+      "name": "sss",
+      "price": "77",
+      "quantity": "4",
+      "selected": true,
+      "available": true,
+      "id": 5
     }
   ]
 }

@@ -14,7 +14,6 @@ export enum ProductsActionsTypes{
   EDIT_PRODUCT= "[Product] Edit product",
   PRODUCT_ADDED= "[Product] product added",
   EDIT_UPDATED= "[Product] product updated",
-
 }
 
 export enum DataStateEnum {

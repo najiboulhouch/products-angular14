@@ -16,7 +16,12 @@ export class ProductNavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   onGetAllProducts() {
+    // Send event to parent component
+    //this.productEventEmitter.emit({ type : ProductsActionsTypes.GET_ALL_PRODUCTS});
+
       this.eventDrivenService.publishEvent(
       {type: ProductsActionsTypes.GET_ALL_PRODUCTS});
   }
@@ -29,7 +34,7 @@ export class ProductNavBarComponent implements OnInit {
     this.eventDrivenService.publishEvent({type : ProductsActionsTypes.GET_AVAILABLE_PRODUCTS});
 
   }
-
+ 
   onNewProduct() {
     this.eventDrivenService.publishEvent({type : ProductsActionsTypes.NEW_PRODUCT});
 
